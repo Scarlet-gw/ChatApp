@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chat App Login</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container animate-pop">
+    <div class="logo-section">
+      <div class="logo-placeholder">💬</div>
+      <h1 class="app-name">App name</h1>
+    </div>
+
+    <div class="form-container">
+      <h2 id="formTitle">Login</h2>
+      <form id="authForm">
+        <!-- Sign Up Only Fields -->
+        <input type="text" id="name" placeholder="Full Name *" class="hidden" />
+        <input type="tel" id="signupPhone" placeholder="Phone Number *" class="hidden" />
+        <input type="email" id="signupEmail" placeholder="Email Address *" class="hidden" />
+        <!-- Login Only Field -->
+        <input type="text" id="emailOrPhone" placeholder="Email Address or Phone Number *" required />
+        <!-- Common Fields -->
+        <input type="password" id="password" placeholder="Password *" required />
+        <input type="password" id="confirmPassword" placeholder="Confirm Password *" class="hidden" />
+
+        <div class="forgot"><a href="/forget/index.html" target="_blank">Forgot Password?</a></div>
+        <button type="submit" id="submitBtn">Login</button>
+      </form>
+
+      <div class="toggle-form">
+        <span id="toggleText">Don't have an account?</span>
+        <button id="toggleBtn">Sign Up</button>
+      </div>
+
+      <div class="divider">or</div>
+
+      <button class="google-btn"> Continue with Google</button>
+      <button class="facebook-btn"> Continue with Facebook</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
